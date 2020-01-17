@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .wrap{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .box1{
+        width: 10%;
+        height: 150px;
+        background-color: red;
+        border: 1px solid black;
+        border-right: 0px;
+    }
+    .box2{
+        width: 50%;
+        height: 150px;
+        background-color: yellow;
+        border: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    .child1{
+        height: 50px;
+        border-bottom: 1px solid black;
+    }
+    .child2{
+        height: 50px;
+        border-bottom: 1px solid black;
+    }
+    .child3{
+        height: 50px;
+    }
+    .content{
+        width: 60%;
+        background-color: green;
+        border: 1px solid black;
+        border-top: 0px;
+    }
+</style>
+<body>
+    <div class="wrap">
+        <div class="box1"></div>
+        <div class="box2">
+            <div class="child1">1</div>
+            <div class="child2">2</div>
+            <div class="child3">3</div>
+        </div>
+    </div>
+    <div class="wrap">
+    <div class="content">
+            3
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      /* input[required="required"] {
+        background-color: red;
+      }
+      input {
+        border: 1px solid yellow;
+      } */
+      .container > .box {
+        background-color: yellow;
+      }
+      .box {
+        border: 1px solid black;
+        height: 100px;
+        display: block;
+        background-color: green;
+      } /*input + .box 는 서로가 형제  input > .box 는 직계 box아래에있는 직계는 해당안됨 */
+      /* .box:last-child {
+        background-color: pink;
+      } */
+      .child {
+        width: 40px;
+      }
+      /* .box:nth-child(1) {
+        background-color: pink;
+       } nth-child(n) n이 0번째부터시작한다 수식도 가능 2씩증가하면서 색칠2n 3씩증가하면서 색칠 3n n은 언제나 0부터카운트 */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="box child"></div>
+      </div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box">
+        <input type="password" required="required" />
+        <input type="submit" value="submit" class="submit" />
+      </div>
+    </div>
+  </body>
+</html>
