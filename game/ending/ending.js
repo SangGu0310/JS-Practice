@@ -1,8 +1,8 @@
-let word = document.querySelector(".word");
-let form = document.querySelector(".form");
-let input = document.querySelector(".answer")
-let btn = document.querySelector(".btn");
-let result = document.querySelector(".result");
+let word = document.querySelector(".word"),
+    form = document.querySelector(".form"),
+    input = document.querySelector(".answer"),
+    btn = document.querySelector(".btn"),
+    result = document.querySelector(".result");
 
  word.append("제로초");
 

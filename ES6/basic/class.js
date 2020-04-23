@@ -97,7 +97,7 @@ const healthChildObj = {
     }
 }
 
-const lastHeathobj = Object.setPrototypeOf(healthChildObj,healthObj);
+Object.setPrototypeOf(healthChildObj,healthObj);
 
 const childObj = Object.setPrototypeOf({
     age : 22
